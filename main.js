@@ -134,16 +134,16 @@ request.onload = function() { //Função executada ao carregar
     document.getElementById("sunset").innerText = "Por do sol: " + resultados.sunset //horario em que o sol dorme
 
     var newRow = document.createElement('tr'); //cria tabela
-    newRow.insertCell(0).innerHTML = 'Data';
-    newRow.insertCell(1).innerHTML = 'Dia da semana';
+    newRow.insertCell(0).innerHTML = 'Dia da semana';
+    newRow.insertCell(1).innerHTML = 'Data';
     newRow.insertCell(2).innerHTML = 'Temp. Max';
     newRow.insertCell(3).innerHTML = 'Temp. Min';
     newRow.insertCell(4).innerHTML = 'Condição';
     document.getElementById('semana').appendChild(newRow); //insere a tabela na pagina html
 for(i=0; i < 6; i++){ //repeticao que extrai os dados da semana e coloca em uma table no html
     var newColum = document.createElement('tr');
-    newColum.insertCell(0).innerHTML = semana[i].date
-    newColum.insertCell(1).innerHTML = semana[i].weekday
+    newColum.insertCell(0).innerHTML = semana[i].weekday
+    newColum.insertCell(1).innerHTML = semana[i].date
     newColum.insertCell(2).innerHTML = semana[i].max + '° C'
     newColum.insertCell(3).innerHTML = semana[i].min + '° C'
     newColum.insertCell(4).innerHTML = semana[i].description
