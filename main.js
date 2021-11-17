@@ -125,7 +125,7 @@ request.onload = function() { //Função executada ao carregar
 
 
     document.getElementById("cidade").innerText = resultados.city //Pega nome da cidade
-    document.getElementById("descricao").innerText = resultados.description //Pega descrição do clima
+   document.getElementById("descricao").innerText = resultados.description //Pega descrição do clima
     document.getElementById("data").innerText = resultados.date //Data da previsão
     document.getElementById("temperatura").innerText = resultados.temp + '° C' //temperatura no momento
     document.getElementById("humidity").innerText = 'Umidade: ' + resultados.humidity +'%' //Umidade no momento
